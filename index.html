@@ -31,7 +31,7 @@
     /* ── HERO ── */
     .hero {
       text-align: center;
-      padding: 90px 24px 72px;
+      padding: 48px 24px 44px;
       background: linear-gradient(160deg, #0D0D0D 0%, #111 60%, #0D1F0D 100%);
       border-bottom: 1px solid var(--border);
     }
@@ -40,23 +40,31 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       color: var(--muted);
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
-    .hero h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: clamp(40px, 7vw, 80px);
-      line-height: 1.05;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+    .hero-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
       margin-bottom: 20px;
+      flex-wrap: wrap;
     }
-    .hero h1 span.green { color: var(--rundot-green); }
-    .hero h1 span.blue  { color: var(--tridot-blue);  }
+    .hero-logos img {
+      height: 40px;
+      width: auto;
+    }
+    .hero-logos .logo-divider {
+      color: rgba(255,255,255,0.25);
+      font-size: 28px;
+      font-weight: 200;
+      line-height: 1;
+    }
     .hero p {
-      max-width: 560px;
-      margin: 0 auto 36px;
+      max-width: 520px;
+      margin: 0 auto 28px;
       color: var(--muted);
-      font-size: 16px;
+      font-size: 15px;
     }
     .pill-row {
       display: flex;
@@ -238,8 +246,12 @@
 <!-- HERO -->
 <section class="hero">
   <p class="hero-eyebrow">Predictive Fitness · Social Media Strategy · July 2026</p>
-  <h1><span class="green">Run</span>Dot &amp; <span class="blue">Tri</span>Dot</h1>
-  <p>A data-driven content strategy built to grow both brands &amp; powered by real athlete photography and AI-personalized training.</p>
+  <div class="hero-logos">
+    <img src="https://raw.githubusercontent.com/bradleyparnell/predictive-fitness-social/main/assets/rundot-logo-transparent.png" alt="RunDot" />
+    <span class="logo-divider">&amp;</span>
+    <img src="https://raw.githubusercontent.com/bradleyparnell/predictive-fitness-social/main/assets/tridot-logo.svg" alt="TriDot" />
+  </div>
+  <p>A data-driven content strategy built to grow both brands, powered by real athlete photography and AI-personalized training.</p>
   <div class="pill-row">
     <span class="pill">🔥 Engage</span>
     <span class="pill">🧠 Educate</span>
